@@ -20,7 +20,7 @@ Project Video: https://drive.google.com/file/d/1XqMDWlNrmJYkqj7dzw7S8f05l-YScuS9
 You can select from natural image dataset or old photo dataset, and then you can pick one of the pictures out of three to display the denoised result.
 
 Or you can upload your own picture to bring it back to life.  
-`streamlit run final.py`
+`streamlit run web_app.py`
 
 ## :rocket: How to run the file?
 
