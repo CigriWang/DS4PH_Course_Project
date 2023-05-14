@@ -12,6 +12,11 @@ Project Video: https://drive.google.com/file/d/1XqMDWlNrmJYkqj7dzw7S8f05l-YScuS9
 
 ## :pushpin: How to use the web app?
 
+
+
+![DS_PH_Present_10minVideo (1)](https://github.com/CigriWang/DS4PH_Course_Project/assets/114510642/67522bf0-f8e0-44b4-b4a5-6181ee1631a9)
+
+
 You can select from natural image dataset or old photo dataset, and then you can pick one of the pictures out of three to display the denoised result.
 
 Or you can upload your own picture to bring it back to life.  
