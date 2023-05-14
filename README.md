@@ -10,6 +10,8 @@ Old photo dataset: https://hpcbristol.net/photographers
 
 Project Video: https://drive.google.com/file/d/1XqMDWlNrmJYkqj7dzw7S8f05l-YScuS9/view?usp=share_link
 
+Model Weights can be extracted from: https://drive.google.com/drive/folders/1ehR69BcjLqePx_jLXh5vYxl_oapPvH8D?usp=share_link
+
 ## :pushpin: How to use the web app?
 
 
