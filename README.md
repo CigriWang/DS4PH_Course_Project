@@ -13,6 +13,7 @@ Old photo dataset: https://hpcbristol.net/photographers
 You can select from natural image dataset or old photo dataset, and then you can pick one of the pictures out of three to display the denoised result.
 
 Or you can upload your own picture to bring it back to life.
+`streamlit run final.py`
 
 ## :rocket: How to run the file?
 
