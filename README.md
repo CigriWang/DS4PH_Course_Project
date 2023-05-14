@@ -2,6 +2,8 @@
  
 Bring noisy old photo back to life using UNet, SUNet, and SWINIR
 
+Team member: Kai San Chan, Huimiao Chen, Jie Song, Sile Wang
+
 Natural photo (DIV2K) dataset: https://www.kaggle.com/datasets/joe1995/div2k-dataset
 
 Old photo dataset: https://hpcbristol.net/photographers
@@ -33,6 +35,8 @@ The test output will be saved to ./model/gen_images/
 ## :round_pushpin: Results
 
 Among three models, SUNet performs better than the other two models. More detail please refer to the report.
+
+https://cigriwang.github.io/DS4PH_Course_Project/DS4PH_Project-compressed.pdf
 
 ## :book: References
 
