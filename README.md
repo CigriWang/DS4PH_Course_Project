@@ -8,6 +8,8 @@ Natural photo (DIV2K) dataset: https://www.kaggle.com/datasets/joe1995/div2k-dat
 
 Old photo dataset: https://hpcbristol.net/photographers
 
+Project Video: https://drive.google.com/file/d/1XqMDWlNrmJYkqj7dzw7S8f05l-YScuS9/view?usp=share_link
+
 ## :pushpin: How to use the web app?
 
 You can select from natural image dataset or old photo dataset, and then you can pick one of the pictures out of three to display the denoised result.
