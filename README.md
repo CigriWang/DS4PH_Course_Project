@@ -18,12 +18,15 @@ Team member:
 **Model Parameters** and **Project PPT** can be extracted from: https://drive.google.com/drive/folders/1ehR69BcjLqePx_jLXh5vYxl_oapPvH8D?usp=share_link
 
 ## :pushpin: How to use the web app?
+In the corresponding working directory, input the following command:
+
+`streamlit run web_app.py`
 
 
 
 ![DS_PH_Present_10minVideo (1)](https://github.com/CigriWang/DS4PH_Course_Project/assets/114510642/67522bf0-f8e0-44b4-b4a5-6181ee1631a9)
 
-**How to lauch the web app**  `streamlit run web_app.py`
+
 
 You can select from natural image dataset or old photo dataset, and then you can pick one of the pictures out of three to display the denoised result.
 
