@@ -9,13 +9,13 @@ Team member:
 - Jie Song (jsong103@jhu.edu)
 - Sile Wang (swang331@jhu.edu)
 
-Natural photo (DIV2K) dataset: https://www.kaggle.com/datasets/joe1995/div2k-dataset
+**Natural photo (DIV2K) dataset**: https://www.kaggle.com/datasets/joe1995/div2k-dataset
 
-Old photo dataset: https://hpcbristol.net/photographers
+**Old photo dataset**: https://hpcbristol.net/photographers
 
-Project Video: https://drive.google.com/file/d/1XqMDWlNrmJYkqj7dzw7S8f05l-YScuS9/view?usp=share_link
+**Project Video**: https://drive.google.com/file/d/1XqMDWlNrmJYkqj7dzw7S8f05l-YScuS9/view?usp=share_link
 
-Model Weights can be extracted from: https://drive.google.com/drive/folders/1ehR69BcjLqePx_jLXh5vYxl_oapPvH8D?usp=share_link
+**Model Parameters** and **Project PPT** can be extracted from: https://drive.google.com/drive/folders/1ehR69BcjLqePx_jLXh5vYxl_oapPvH8D?usp=share_link
 
 ## :pushpin: How to use the web app?
 
@@ -23,11 +23,12 @@ Model Weights can be extracted from: https://drive.google.com/drive/folders/1ehR
 
 ![DS_PH_Present_10minVideo (1)](https://github.com/CigriWang/DS4PH_Course_Project/assets/114510642/67522bf0-f8e0-44b4-b4a5-6181ee1631a9)
 
+**How to lauch the web app**  `streamlit run web_app.py`
 
 You can select from natural image dataset or old photo dataset, and then you can pick one of the pictures out of three to display the denoised result.
 
 Or you can upload your own picture to bring it back to life.  
-`streamlit run web_app.py`
+
 
 ## :rocket: How to run the file?
 
