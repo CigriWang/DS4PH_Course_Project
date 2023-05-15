@@ -2,7 +2,12 @@
  
 Bring noisy old photo back to life using UNet, SUNet, and SWINIR
 
-Team member: Kai San Chan (kchan52@jhu.edu), Huimiao Chen (hchen185@jhu.edu), Jie Song (jsong103@jhu.edu), Sile Wang (swang331@jhu.edu)
+Team member: 
+
+- Kai San Chan (kchan52@jhu.edu)
+- Huimiao Chen (hchen185@jhu.edu)
+- Jie Song (jsong103@jhu.edu)
+- Sile Wang (swang331@jhu.edu)
 
 Natural photo (DIV2K) dataset: https://www.kaggle.com/datasets/joe1995/div2k-dataset
 
