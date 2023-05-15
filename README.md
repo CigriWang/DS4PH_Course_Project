@@ -2,7 +2,7 @@
  
 Bring noisy old photo back to life using UNet, SUNet, and SWINIR
 
-Team member: 
+Team members: 
 
 - Kai San Chan (kchan52@jhu.edu)
 - Huimiao Chen (hchen185@jhu.edu)
