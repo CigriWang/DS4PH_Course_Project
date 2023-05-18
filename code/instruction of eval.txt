@@ -1,0 +1,112 @@
+First run the eval.py
+
+1. Note that you need to first change the path to your directory to the test data set
+test data set directory should be something like this
+
+--dataset
+  |--test
+     |--input
+	|--image01.png
+	|--image02.png
+	|--image03.png
+	|--...
+	|--image100.png
+     |--label
+	|--image01.png
+	|--image02.png
+	|--image03.png
+	|--...
+	|--image100.png
+  |--train
+     |--input
+     |--label
+(Note that input and label image should named the same in label and input folder)
+(image01.png should be the name for label and also input)
+Change the path in the code:
+
+test_folderP = "C:/Users/sli248/ZReconstruction/DL/dataset/test/input/*"
+test_folderL = "C:/Users/sli248/ZReconstruction/DL/dataset/test/label/*"
+pth_model_path = "C:/Users/sli248/ZReconstruction/"+ \
+                "DL/Unet-Segmentation-Pytorch-Nest-of-Unets/model/"+ \
+                "Unet_D_600_32/best.pth"
+
+TO
+
+test_folderP = [Path to the test input] (Note remember to add "/*" after the ./input)
+test_folderL = [Path to the test label] (Note remember to add "/*" after the ./input)
+pth_model_path = [Path to the weights] 
+
+(generally located in these three folder: ./model_SUNet ./model_SWIN ./model_UNet)
+./model_SUNet/UNet_D_600_32/best.pth
+
+
+2. Change the model initialization
+
+*****Just uncommend one of the model then you should be good to go *****
+# For UNet
+# model_test = model_unet(model_Inputs[0], 3, 3)
+# For SUNet
+# model_test = SUNet(img_size=128, patch_size=4, in_chans=3, out_chans=3,
+#                   embed_dim=96, depths=[8, 8, 8, 8],
+#                   num_heads=[8, 8, 8, 8],
+#                   window_size=8, mlp_ratio=4., qkv_bias=True, qk_scale=2,
+#                   drop_rate=0., attn_drop_rate=0., drop_path_rate=0.1,
+#                   norm_layer=torch.nn.LayerNorm, ape=False, patch_norm=True,
+#                   use_checkpoint=False, final_upsample="Dual up-sample")
+# For SWINIR
+window_size = 8
+model_test = SwinIR(upscale=1, img_size=(InputH, InputW),
+                   window_size=window_size, img_range=1., depths=[2, 2, 2, 2],
+                   embed_dim=30, num_heads=[2, 2, 2, 2], mlp_ratio=1, upsampler='pixelshuffledirect')
+
+
+************IMPORTANT NOTICE*****************
+Note that Before you run the code, you should be awared that
+it will overwrite all the gen_images (outputs) results folder! SO make sure you rename
+the current result if you want to save the folder and run another.
+
+3. RUN the CODE
+
+you should get "gen_images" under the model folder you use.
+
+For example, if you use SWINIR, you should get
+located in ./model_SWIN/gen_images/  This is where the outputs located
+
+4. Evaluation
+
+Then, you can run the Histogram_of_performance.ipynb to see the generall overall PSNR and SSIM 
+for the model comparsion
+
+********Note that you should also change your path to the output, label, and input ***********
+
+read_path = "C:/Users/sli248/ZReconstruction/DL/dataset/test/input/" 
+label_path = "C:/Users/sli248/ZReconstruction/DL/dataset/test/label/"
+pred_path = "C:/Users/sli248/ZReconstruction/DL/Unet-Segmentation-Pytorch-Nest-of-Unets/model/gen_images"
+
+read_path = [path to input]
+label_path = [path to label]
+pred_path = [path to output]
+
+it will also generate two .txt file under the model folder
+they are the comparsion between input and label, and output and label
+For you to check out individual performance
+
+
+5. Example difference map
+
+You can run the AddingColorbarToTest.py to get the absolute difference map
+
+test_folderP = "./dataset/test/input/*" [path to input]
+********Note that you should add the * after the input
+test_folderL = "./dataset/test/label/" [path to label]
+
+test_folderO = "./model/"+ \
+                "gen_images/" [path to output]
+
+You should get colorbar and colorbar_diff folder under you model path
+colorbar_diff is the absolute difference map you want
+
+
+
+
+
